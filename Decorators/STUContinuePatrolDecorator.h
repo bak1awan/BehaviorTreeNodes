@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTDecorator.h"
-#include "STUDistanceToEnemyDecorator.generated.h"
+#include "USTUContinuePatrolDecorator.generated.h"
 
 
 UCLASS()
-class SHOOTTHEMUP_API USTUDistanceToEnemyDecorator : public UBTDecorator
+class SHOOTTHEMUP_API USTUContinuePatrolDecorator : public UBTDecorator
 {
 	GENERATED_BODY()
 public:
-    USTUDistanceToEnemyDecorator();
+    USTUContinuePatrolDecorator();
 
 protected:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (ClampMin = "0.0", ClampMax = "1.0"))
